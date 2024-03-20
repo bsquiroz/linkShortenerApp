@@ -12,7 +12,7 @@ onBeforeMount(() => {
         .then((res) => {
             if (!res) return router.replace("/");
 
-            window.location.replace(res.renameUrl);
+            window.location.replace(res.urlOriginal);
         })
         .catch((error) => alert(error));
 });

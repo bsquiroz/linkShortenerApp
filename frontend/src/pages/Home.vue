@@ -90,7 +90,7 @@ getUrl().then((res) => {
             ></i>
             <i
                 class="bx bx-copy text-yellow-500 cursor-pointer"
-                @click="() => handleCopy(url.urlOriginal)"
+                @click="() => handleCopy(url.renameUrl)"
             ></i>
         </li>
     </ul>
