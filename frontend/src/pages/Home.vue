@@ -10,7 +10,7 @@ const handleSubmit = () => {
     try {
         new URL(url.value);
 
-        createUrl({ url })
+        createUrl({ url: url.value })
             .then(() => {
                 getUrl().then((res) => {
                     urls.value = res;
