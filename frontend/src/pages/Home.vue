@@ -8,9 +8,9 @@ const urls = ref<Url[]>([]);
 
 const handleSubmit = () => {
     try {
-        const miUrl = new URL(url.value);
+        new URL(url.value);
 
-        createUrl({ url: miUrl.origin })
+        createUrl({ url })
             .then(() => {
                 getUrl().then((res) => {
                     urls.value = res;
